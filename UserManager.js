@@ -57,7 +57,6 @@ class UsersManager {
         return 'No hay un usuario con ese id'
       }
       const usuario = usuariosPrev[usuarioIndex]
-      //const usuarioUpdate = {...usuario,...obj}
       usuariosPrev[usuarioIndex] = { ...usuario, ...obj }
       await fs.promises.writeFile(this.path, JSON.stringify(usuariosPrev))
     } catch (error) {
