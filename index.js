@@ -1,29 +1,9 @@
-//const htpp = require('http') // CommonJS
-
-// servidor con modulo nativo http
-
-// import http from 'http' // ES Module
-
-// const server = http.createServer()
-
-// server.listen(8080,()=>{
-//     console.log('Escuchando al puerto 8080');
-// })
-
-// servidor con express
-
 import express from 'express'
 
 const usuarios = [
-    {
-        nombre:'Juan'
-    },
-    {
-        nombre: 'Luis'
-    },
-    {
-        nombre: 'Carlos'
-    }
+    { id: "1", nombre: "Juan", apellido: "Espinosa", edad: 23},
+    { id: "2", nombre: "Luis", apellido: "Carilo", edad: 30},
+    { id: "3", nombre: "Maria", apellido: "Tiza", edad: 48}
 ]
 
 

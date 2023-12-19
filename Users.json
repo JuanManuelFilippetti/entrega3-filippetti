@@ -1,4 +1,6 @@
 [
+    { "name": "Juan", "last_Name": "Espinosa", "age": 23, "id": 1 },
+    { "name": "Luis", "last_Name": "Carilo", "age": 30, "id": 2 },
     { "name": "Jorge", "last_Name": "Gutierrez", "age": 35, "id": 3 },
     { "name": "Carolina", "last_Name": "Mendoza", "age": 50, "id": 4 }
   ]
