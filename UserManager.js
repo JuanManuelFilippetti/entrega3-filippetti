@@ -5,11 +5,12 @@ class UsersManager {
     this.path = path
   }
 
-  async getUsers() {
+  async getUsers(limit) {
     try {
       if (fs.existsSync(this.path)) {
         const infoArchivo = await fs.promises.readFile(this.path, 'utf-8')
-        return JSON.parse(infoArchivo)
+        const info = JSON.parse(infoArchivo)
+        return info.slice(0, limit)
       } else {
         return []
       }
